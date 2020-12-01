@@ -25,6 +25,9 @@ for ds_list in dataset_5:
     a_y = int(px_x*sin(pi/3) + px_y*cos(pi/3))+480
     img[a_y][a_x * 3] = 0
     img[a_y][a_x * 3 + 1] = 0
+    #optional lines
+    #img[a_y][(a_x+1) * 3] = 0
+    #img[a_y][(a_x+1) * 3 + 1] = 0
 
 with open('lab3.png', 'wb') as f:
     w = png.Writer(width, height, greyscale=False)
